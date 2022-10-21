@@ -13,6 +13,7 @@
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
+    
 }
 
 .centerdiv {
@@ -37,6 +38,21 @@
     background-color: rgba(27, 27, 50, 0.8);
     color: white;
     padding: 50px;
+    font-size: 18px;
+}
+.form input{
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.form select{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* width: 720px;
+    height: 40px; */
+    width: 90%;
+    height: 40%;
+    padding-left: 10px;
+    font-family: 'poppins', sans-serif;
 }
 
 .form p {
@@ -77,4 +93,7 @@ p {
 
 .suggestions {
     display: block;
+}
+.text{
+    width: 90%;
 }
