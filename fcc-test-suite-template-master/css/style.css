@@ -13,7 +13,10 @@
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    
+    background-attachment: fixed;
+    overflow: hidden;
+    background: linear-gradient(rgba(27, 27, 50, 0.8));
+    -webkit-image-fill-color: rgba(27, 27, 50, 0.8);
 }
 
 .centerdiv {
@@ -32,6 +35,15 @@
     padding-top: 20px;
 }
 
+.colorbackground {
+    background-attachment: fixed;
+    background: rgba(27, 27, 50, 0.8);
+    opacity: 0.8;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .form {
     width: 100%;
     height: 80%;
@@ -40,11 +52,13 @@
     padding: 50px;
     font-size: 18px;
 }
-.form input{
+
+.form input {
     margin-bottom: 30px;
     margin-top: 10px;
 }
-.form select{
+
+.form select {
     margin-top: 10px;
     margin-bottom: 10px;
     /* width: 720px;
@@ -94,6 +108,54 @@ p {
 .suggestions {
     display: block;
 }
-.text{
+
+.text {
     width: 90%;
+}
+
+@media only screen and (max-width: 600px) {
+    .mainbody {
+        width: 100%;
+        height: 100%;
+    }
+    .centerdiv {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+    .form {
+        padding: 20px;
+    }
+    .form input {
+        margin-bottom: 20px;
+    }
+    .form select {
+        width: 100%;
+        height: 40%;
+    }
+    .form p {
+        font-size: 16px;
+    }
+    button {
+        padding: 10px;
+        width: 100%;
+    }
+    input {
+        padding: 5px;
+        width: 100%;
+    }
+    input[type="radio"] {
+        width: 15px;
+        height: 15px;
+    }
+    input[type="radio"],
+    p {
+        display: block;
+    }
+    .suggestions {
+        display: block;
+    }
+    .text {
+        width: 100%;
+    }
 }
